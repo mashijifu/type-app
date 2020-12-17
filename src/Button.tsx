@@ -1,15 +1,14 @@
 import React,{FC} from 'react'
 
 type ButtonProps = {
-    num: number,
     text: string,
     color: string,
 }
 
-const Button: FC<ButtonProps> = ({ num, text, color}) => {
+const Button: FC<ButtonProps> = ({ text, color}) => {
     return (
         <div>
-            <button style={backgrondColor}></button>
+            <button style={{backgroundColor: color}}>{text}</button>
         </div>
     )
 
