@@ -1,12 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Button from './Button'
 
 function App() {
-  return (
-    <div className="App">
-      <Button text="taro" color="blue" />
-    </div>
-  )
+    const [color, setColor]=useState("red")
+
+    return (
+        <div className="App">
+        <Button text="send" color="blue" setColor={color} />
+        </div>
+    )
 }
 
 export default App;
